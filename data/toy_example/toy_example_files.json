@@ -1,0 +1,11 @@
+{
+  "file_symbols": "../data/toy_example/toy_example_symbols.json",
+  "file_skills": "../data/toy_example/toy_example_skills.json",
+  "folder_trajectories": "../data/toy_example/trajectories/",
+  "folder_plot": "../data/toy_example/plots/",
+  "skill_names": ["skill0", "skill1"],
+  "file_structured_slugs": "../data/toy_example/toy_example.structuredslugs",
+  "file_log": "../data/toy_example/log_toy_example.txt",
+  "f_user_spec": "../data/toy_example/toy_example.json",
+  "file_suggestions": "../data/stretch/toy_example_suggestion.json"
+}

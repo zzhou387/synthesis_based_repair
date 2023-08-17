@@ -1932,6 +1932,7 @@ def run_repair(file_in, opts):
             T_swapped_post_all = T_swapped_post_all | T_swapped_post
             # repaired_gs.update_change_cons(acts_changed)
 
+    print("Finished checking the liveness guarantees")
     print("Computed winning states in: {}".format(time.time() - s_time))
     # Make system reach livesness guarantees from initial states
     is_realizable = repaired_gs.get_t_init() & winning_states.get_z() == repaired_gs.get_t_init()
@@ -1944,6 +1945,7 @@ def run_repair(file_in, opts):
         #     "The specification actually needs repair (init states do not overlap winning states) and a strategy cannot just be synthesized")
         return False, dict()
     elif opts['only_synthesis'] and is_realizable:
+        print("Realizable now!!!")
         return True, dict()
     while not is_realizable:
         opts['cover'] = True
@@ -1961,6 +1963,7 @@ def run_repair(file_in, opts):
         # repaired_gs.update_change_cons(acts_changed)
 
         is_realizable = repaired_gs.get_t_init() & winning_states.get_z() == repaired_gs.get_t_init()
+    print("Finished checking the initial states")
     print("Checked initial states contained in: {}".format(time.time() - s_time))
 
     # Synthesize a strategy

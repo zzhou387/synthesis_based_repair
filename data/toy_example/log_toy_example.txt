@@ -2,8 +2,14 @@ Seed 0 took 1 iterations
 Skill name: skill4
 Original name: skill1
 Initial preconditions: 
-x1 & y1
-skill4 & !x0 & x1 & !x2 & !y0 & y1 & !y2 -> ((!x0' & !x1' & x2' & !y0' & !y1' & y2'))
+x2 & y1
+x2 & y0
+x1 & y0
+x0 & y0
+skill4 & !x0 & !x1 & x2 & !y0 & y1 & !y2 -> ((!x0' & !x1' & x2' & !y0' & !y1' & y2'))
+skill4 & !x0 & !x1 & x2 & y0 & !y1 & !y2 -> ((!x0' & !x1' & x2' & !y0' & y1' & !y2'))
+skill4 & !x0 & x1 & !x2 & y0 & !y1 & !y2 -> ((!x0' & !x1' & x2' & y0' & !y1' & !y2'))
+skill4 & x0 & !x1 & !x2 & y0 & !y1 & !y2 -> ((!x0' & x1' & !x2' & y0' & !y1' & !y2'))
 Final Postconditions:
 !x0 & !x1 & x2 & !y0 & !y1 & y2
 **********************
@@ -12,8 +18,14 @@ Seed 1 took 1 iterations
 Skill name: skill4
 Original name: skill1
 Initial preconditions: 
-x1 & y1
-skill4 & !x0 & x1 & !x2 & !y0 & y1 & !y2 -> ((!x0' & !x1' & x2' & !y0' & !y1' & y2'))
+x2 & y1
+x2 & y0
+x1 & y0
+x0 & y0
+skill4 & !x0 & !x1 & x2 & !y0 & y1 & !y2 -> ((!x0' & !x1' & x2' & !y0' & !y1' & y2'))
+skill4 & !x0 & !x1 & x2 & y0 & !y1 & !y2 -> ((!x0' & !x1' & x2' & !y0' & y1' & !y2'))
+skill4 & !x0 & x1 & !x2 & y0 & !y1 & !y2 -> ((!x0' & !x1' & x2' & y0' & !y1' & !y2'))
+skill4 & x0 & !x1 & !x2 & y0 & !y1 & !y2 -> ((!x0' & x1' & !x2' & y0' & !y1' & !y2'))
 Final Postconditions:
 !x0 & !x1 & x2 & !y0 & !y1 & y2
 **********************
@@ -25,9 +37,11 @@ Initial preconditions:
 x2 & y1
 x1 & y1
 x1 & y0
+x0 & y0
 skill4 & !x0 & !x1 & x2 & !y0 & y1 & !y2 -> ((!x0' & !x1' & x2' & !y0' & !y1' & y2'))
-skill4 & !x0 & x1 & !x2 & !y0 & y1 & !y2 -> ((!x0' & x1' & !x2' & y0' & !y1' & !y2'))
-skill4 & !x0 & x1 & !x2 & y0 & !y1 & !y2 -> ((!x0' & !x1' & x2' & !y0' & y1' & !y2'))
+skill4 & !x0 & x1 & !x2 & !y0 & y1 & !y2 -> ((!x0' & !x1' & x2' & !y0' & y1' & !y2'))
+skill4 & !x0 & x1 & !x2 & y0 & !y1 & !y2 -> ((!x0' & x1' & !x2' & !y0' & y1' & !y2'))
+skill4 & x0 & !x1 & !x2 & y0 & !y1 & !y2 -> ((!x0' & x1' & !x2' & y0' & !y1' & !y2'))
 Final Postconditions:
 !x0 & !x1 & x2 & !y0 & !y1 & y2
 **********************
@@ -36,8 +50,14 @@ Seed 3 took 1 iterations
 Skill name: skill4
 Original name: skill1
 Initial preconditions: 
+x2 & y1
 x1 & y1
-skill4 & !x0 & x1 & !x2 & !y0 & y1 & !y2 -> ((!x0' & !x1' & x2' & !y0' & !y1' & y2'))
+x0 & y1
+x0 & y0
+skill4 & !x0 & !x1 & x2 & !y0 & y1 & !y2 -> ((!x0' & !x1' & x2' & !y0' & !y1' & y2'))
+skill4 & !x0 & x1 & !x2 & !y0 & y1 & !y2 -> ((!x0' & !x1' & x2' & !y0' & y1' & !y2'))
+skill4 & x0 & !x1 & !x2 & !y0 & y1 & !y2 -> ((!x0' & x1' & !x2' & !y0' & y1' & !y2'))
+skill4 & x0 & !x1 & !x2 & y0 & !y1 & !y2 -> ((x0' & !x1' & !x2' & !y0' & y1' & !y2'))
 Final Postconditions:
 !x0 & !x1 & x2 & !y0 & !y1 & y2
 **********************
@@ -46,62 +66,14 @@ Seed 4 took 1 iterations
 Skill name: skill4
 Original name: skill1
 Initial preconditions: 
-x1 & y1
-skill4 & !x0 & x1 & !x2 & !y0 & y1 & !y2 -> ((!x0' & !x1' & x2' & !y0' & !y1' & y2'))
-Final Postconditions:
-!x0 & !x1 & x2 & !y0 & !y1 & y2
-**********************
-================================
-Seed 5 took 1 iterations
-Skill name: skill4
-Original name: skill1
-Initial preconditions: 
-x1 & y1
-skill4 & !x0 & x1 & !x2 & !y0 & y1 & !y2 -> ((!x0' & !x1' & x2' & !y0' & !y1' & y2'))
-Final Postconditions:
-!x0 & !x1 & x2 & !y0 & !y1 & y2
-**********************
-================================
-Seed 6 took 1 iterations
-Skill name: skill4
-Original name: skill1
-Initial preconditions: 
-x1 & y1
-skill4 & !x0 & x1 & !x2 & !y0 & y1 & !y2 -> ((!x0' & !x1' & x2' & !y0' & !y1' & y2'))
-Final Postconditions:
-!x0 & !x1 & x2 & !y0 & !y1 & y2
-**********************
-================================
-Seed 7 took 1 iterations
-Skill name: skill4
-Original name: skill1
-Initial preconditions: 
-x1 & y1
-skill4 & !x0 & x1 & !x2 & !y0 & y1 & !y2 -> ((!x0' & !x1' & x2' & !y0' & !y1' & y2'))
-Final Postconditions:
-!x0 & !x1 & x2 & !y0 & !y1 & y2
-**********************
-================================
-Seed 8 took 1 iterations
-Skill name: skill4
-Original name: skill1
-Initial preconditions: 
-x1 & y1
-skill4 & !x0 & x1 & !x2 & !y0 & y1 & !y2 -> ((!x0' & !x1' & x2' & !y0' & !y1' & y2'))
-Final Postconditions:
-!x0 & !x1 & x2 & !y0 & !y1 & y2
-**********************
-================================
-Seed 9 took 1 iterations
-Skill name: skill4
-Original name: skill1
-Initial preconditions: 
 x2 & y1
 x1 & y1
-x1 & y0
+x0 & y1
+x0 & y0
 skill4 & !x0 & !x1 & x2 & !y0 & y1 & !y2 -> ((!x0' & !x1' & x2' & !y0' & !y1' & y2'))
-skill4 & !x0 & x1 & !x2 & !y0 & y1 & !y2 -> ((!x0' & x1' & !x2' & y0' & !y1' & !y2'))
-skill4 & !x0 & x1 & !x2 & y0 & !y1 & !y2 -> ((!x0' & !x1' & x2' & !y0' & y1' & !y2'))
+skill4 & !x0 & x1 & !x2 & !y0 & y1 & !y2 -> ((!x0' & !x1' & x2' & !y0' & y1' & !y2'))
+skill4 & x0 & !x1 & !x2 & !y0 & y1 & !y2 -> ((!x0' & x1' & !x2' & !y0' & y1' & !y2'))
+skill4 & x0 & !x1 & !x2 & y0 & !y1 & !y2 -> ((x0' & !x1' & !x2' & !y0' & y1' & !y2'))
 Final Postconditions:
 !x0 & !x1 & x2 & !y0 & !y1 & y2
 **********************
